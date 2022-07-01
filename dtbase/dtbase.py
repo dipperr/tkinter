@@ -11,7 +11,7 @@ class DataBase:
         logging.info('conectando a base de dados')
         try:
             self.conexao = sqlite3.connect(
-                '/home/motoko/Downloads/projeto_visao_computacional/portaria/database/bancodados.db'
+                '../database/bancodados.db'
             )
             self.cursor = self.conexao.cursor()
         except sqlite3.OperationalError:
